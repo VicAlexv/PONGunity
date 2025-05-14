@@ -40,6 +40,7 @@ jobs:
         with:
           # Optional SDK version(s) to use. If not provided, will install global.json version when available. Examples: 2.2.104, 3.1, 3.1.x, 3.x, 6.0.2xx
           dotnet-version: # optional
+          
           # Optional quality of the build. The possible values are: daily, signed, validated, preview, ga.
           dotnet-quality: # optional
           # Optional global.json location, if your global.json isn't located in the root of the repo.
@@ -51,7 +52,7 @@ jobs:
           # Optional NuGet.config location, if your NuGet.config isn't located in the root of the repo.
           config-file: # optional
           # Optional input to enable caching of the NuGet global-packages folder
-          cache: # optional
+          cache: true
           # Used to specify the path to a dependency file: packages.lock.json. Supports wildcards or a list of file names for caching multiple dependencies.
           cache-dependency-path: # optional
           
