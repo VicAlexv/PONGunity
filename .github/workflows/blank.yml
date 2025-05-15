@@ -56,10 +56,4 @@ jobs:
           cache: true
           # Used to specify the path to a dependency file: packages.lock.json. Supports wildcards or a list of file names for caching multiple dependencies.
           cache-dependency-path: # optional
-
-  deploy-dev:
-    needs: build
-    environment: 
-      name: desenvolvimento
-    runs-on: ubuntu-latest
           
